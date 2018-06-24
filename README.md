@@ -1,3 +1,3 @@
 ## Kristjana Xharja Portfolio Website
 
-Work in Progress ¯\_(ツ)_/¯
+Work in Progress `¯\_(ツ)_/¯`
