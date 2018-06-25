@@ -1,5 +1,6 @@
 import React from 'react';
 import { projectOne, projectTwo, projectThree, projectFour } from '../utils/media';
+import Footer from './Footer';
 
 const Home = () => {
 	return (
@@ -28,6 +29,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
 	)
 }
