@@ -1,88 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { projectOne, projectTwo, projectThree, projectFour } from '../utils/media';
-import Footer from './Footer';
 
-const Home = () => {
-	return (
-		<div className='mw9 center ph3-ns'>
-      <div className='cf ph2-ns'>
-        
-        <Link to='/projectOne'>
-          <div className='fl w-100 w-50-ns pa2'>
-            <div className='outline bg-white pv4'>
-              <img src={projectOne} alt="Project One Pic" />
-            </div>
-          </div>
-        </Link>
-        
-        <Link to='/projectTwo'>
-          <div className='fl w-100 w-50-ns pa2'>
-            <div className='outline bg-white pv4'>
-              <img src={projectTwo} alt="Project Two Pic" />
-            </div>
-          </div>
-        </Link>
+const home = () => {
+  return (
+    <main className='pt4'>
+      <div className="tc pv4 pv6-ns">
+        <h1 className="f4 f3-ns fw6 dark-gray courier">Hi, I'm Kristjana!</h1>
+        <h2 className="f6 mid-gray fw2 ttu tracked georgia">Architect Visualizer</h2>
 
+        <a className="f6 grow dib v-mid ph3 pv2 mb3 dark-gray" href="https://www.facebook.com/kristjana.xharja" target="_blank" rel="noopener noreferrer" >
+          <i className="fab fa-facebook-f fa-2x"></i>
+        </a>
+        <a className="f6 grow dib v-mid ph3 pv2 mb3 dark-gray" href="mailto:kristjana.xharja@gmail.com" target="_blank" rel="noopener noreferrer" >
+          <i className="fas fa-envelope fa-2x"></i>
+        </a>
       </div>
-      
-      <div className='cf ph2-ns'>
-        
-        <Link to='/projectThree'>
-          <div className='fl w-100 w-50-ns pa2'>
-            <div className='outline bg-white pv4'>
-              <img src={projectThree} alt="Project Three Pic" />
-            </div>
-          </div>
-        </Link>
-
-        <Link to='/projectFour'>
-          <div className='fl w-100 w-50-ns pa2'>
-            <div className='outline bg-white pv4'>
-              <img src={projectFour} alt="Project Four Pic" />
-            </div>
-          </div>
-        </Link>
-
-      </div>
-
-      <Footer />
-    </div>
+    </main>
 	)
 }
 
-export default Home;
-
-
-/*
-
-<div className='mw9 center ph3-ns'>
-      <div className='cf ph2-ns'>
-        <div className='fl w-100 w-50-ns pa2'>
-          <div className='outline bg-white pv4'>
-            <img src={projectOne} alt="Project One Pic" />
-          </div>
-        </div>
-        <div className='fl w-100 w-50-ns pa2'>
-          <div className='outline bg-white pv4'>
-            <img src={projectTwo} alt="Project Two Pic" />
-          </div>
-        </div>
-      </div>
-      <div className='cf ph2-ns'>
-        <div className='fl w-100 w-50-ns pa2'>
-          <div className='outline bg-white pv4'>
-            <img src={projectThree} alt="Project Three Pic" />
-          </div>
-        </div>
-        <div className='fl w-100 w-50-ns pa2'>
-          <div className='outline bg-white pv4'>
-            <img src={projectFour} alt="Project Four Pic" />
-          </div>
-        </div>
-      </div>
-
-      <Footer />
-    </div>
-
-*/ 
+export default home;

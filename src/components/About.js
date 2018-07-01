@@ -11,8 +11,7 @@ const About = () => {
           <div className="ph4 ph5-m ph6-l">
             <div className="measure f3 center mv5 black-70">
               <h1 className="fw6 f3 avenir">
-                Hi, I'm Kristjana Xharja <br />
-                Architect from Florence, Italy
+                About Me
               </h1>
               <p className="lh-copy measure f4 f3-ns black-70 baskerville">
                 As a child, I was fascinated by the monumental buildings, the timeless ones that take your breath away leaving you with only one question: "How did they build something like that?".
