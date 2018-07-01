@@ -1,5 +1,5 @@
 import React from 'react';
-import { profilePic } from '../utils/media';
+import profilePic from '../images/profile-pic.png';
 import Footer from './Footer';
 
 const About = () => {
