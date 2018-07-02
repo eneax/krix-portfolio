@@ -12,7 +12,7 @@ const ProjectItem = ({ match }) => {
         <header className='avenir tc-l ph3 ph4-ns pt4 pt5-ns'>
           <h1 className='f3 f2-m f-subheadline-l measure lh-title fw1 mt0'>{project.title}</h1>
           <time className='f5 f4-l db fw1 baskerville mb4'>{project.time}</time>
-          <img className='w-100 dib measure f3' src={project.cover} alt={`${project.title} Cover Pic`} />
+          <img className='material w-100 dib measure f3' src={project.cover} alt={`${project.title} Cover Pic`} />
         </header>
 
         <div className="ph3 ph4-m ph5-l">
@@ -21,7 +21,7 @@ const ProjectItem = ({ match }) => {
             {
               project.resources.map((sub) => (
                 <div key={sub.id}>
-                  <img className="db w-100 mt4 mt5-ns" src={sub.img} alt={`${sub.id} pic`} />
+                  <img className="material db w-100 mt4 mt5-ns" src={sub.img} alt={`${sub.id} pic`} />
                   <p>{sub.desc}</p>                  
                 </div>
               ))
