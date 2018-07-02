@@ -4,7 +4,7 @@ import logo from '../images/logo.png';
 
 const Navbar = () => {
 	return (
-    <nav className='dt w-100 border-box pa3 ph4-ns pv4'>
+    <nav className='dt w-100 border-box pa3 ph4-ns pv4 avenir'>
       <Link to='/' className='dtc v-mid mid-gray link dim w-25'>
         <img src={logo} className='logo dib br-100' alt='Kri Xharja Logo' />
       </Link>
@@ -21,5 +21,3 @@ const Navbar = () => {
 }
 
 export default Navbar;
-
-// <img src='http://tachyons.io/img/logo.jpg' className='dib w3 h3 br-100' alt='Kri Xharja Logo' />
