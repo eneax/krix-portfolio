@@ -12,8 +12,8 @@ const ProjectList = () => {
           projects.map(({ cover, id }) => (
             <Link to={`/projects/${id}`} key={id}>
               <div className='fl w-100 w-50-ns pa2'>
-                <div className='outline bg-white pv4'>
-                  <img src={cover} alt='name' />
+                <div className='bg-white pv4'>
+                  <img className='projects-list' src={cover} alt='name' />
                 </div>
               </div>
             </Link>

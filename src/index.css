@@ -1,5 +1,5 @@
 /******* 
-GENERAL
+General
 *******/
 body {
   margin: 0;
@@ -16,7 +16,7 @@ body {
 }
 
 /****** 
-NAVBAR
+Navbar
 ******/
 a.link:focus {
   outline: none;
@@ -28,3 +28,9 @@ a.link:focus {
 	padding-left: 0;
 	margin-left: -2rem;
 }
+
+/***********
+ProjectList
+***********/
+img.projects-list { transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) }
+img.projects-list:hover { transform: rotate(2deg) scale(1.01) }
