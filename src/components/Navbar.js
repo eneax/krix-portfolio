@@ -10,7 +10,7 @@ const Navbar = () => {
       </Link>
       <div className='dtc v-mid w-75 tr'>
         <Link to='/projects' className='link dim dark-gray f6 f5-ns dib mr3 mr4-ns'>
-          Projects
+          Portfolio
         </Link>
         <Link to='/about' className='link dim dark-gray f6 f5-ns dib'>
           About
