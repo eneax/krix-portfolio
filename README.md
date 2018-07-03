@@ -1,3 +1,3 @@
 ## Kristjana Xharja Portfolio Website
 
-Work in Progress `¯\_(ツ)_/¯`
+Clean and minimal portfolio website built with React.
