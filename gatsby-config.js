@@ -51,8 +51,8 @@ module.exports = {
         name: `Kristjana Xharja | Architect Visualizer`,
         short_name: `Kri`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#4F69C6`,
+        theme_color: `#4F69C6`,
         display: `minimal-ui`,
         icon: `src/images/logo.svg`, // This path is relative to the root of the site.
       },
@@ -60,5 +60,6 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     'gatsby-plugin-offline',
+    'gatsby-plugin-styled-components',
   ],
 }

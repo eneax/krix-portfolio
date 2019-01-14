@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import { above, avenir } from '../utils'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { SocialLink } from '../elements'
+import { above, avenir } from '../utils'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 
