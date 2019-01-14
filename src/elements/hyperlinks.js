@@ -1,35 +1,6 @@
 import styled from 'styled-components'
-import { Link } from 'gatsby'
-import { indigo, mineShaft } from '../utils'
+import { mineShaft } from '../utils'
 
-export const ExternalLink = styled.a.attrs({
-  target: '_blank',
-  rel: 'nofollow'
-})`
-  text-decoration: underline;
-  color: #000;
-  &:hover {
-    text-decoration: none;
-    transition: color .05s ease-in;
-  }
-  &:hover,
-  &:focus {
-    color: ${indigo};
-  }
-`
-
-export const InternalLink = styled(Link)`
-  text-decoration: underline;
-  color: #000;
-  &:hover {
-    text-decoration: none;
-    transition: color .05s ease-in;
-  }
-  &:hover,
-  &:focus {
-    color: ${indigo};
-  }
-`
 
 export const SocialLink = styled.a.attrs({
   target: '_blank',
