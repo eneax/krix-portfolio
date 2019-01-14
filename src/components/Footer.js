@@ -1,11 +1,31 @@
-import React from 'react';
+import React from 'react'
+import styled from 'styled-components'
+import { above, avenir, grey } from '../utils';
 
-const Footer = () => {
-  return (
-    <footer className="mt3 mb2 pv5 ph3 ph5-m ph6-l">
-      <small className="db tc light-silver">© 2018 Kristjana Xharja. All Rights Reserved</small>
-    </footer>
-  )
-}
 
-export default Footer;
+const FooterWrapper = styled.footer`
+	${avenir};
+	color: ${grey};
+	${above.tablet`
+		padding-left: 4rem;
+		padding-right: 4rem;
+	`}
+	${above.laptop`
+		padding-left: 8rem;
+  	padding-right: 8rem;
+	`}
+	small {
+		display: block;
+		font-size: .75rem;
+		text-align: center;
+	}
+`
+
+
+const Footer = () => (
+	<FooterWrapper>
+		<small>© 2019 <b>Kristjana Xharja</b>, All Rights Reserved</small>
+	</FooterWrapper>
+)
+
+export default Footer
