@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { above, baskerville, indigo } from '../utils'
 
 
-const  PROJECTS_LIST_QUERY = graphql`
+const PROJECTS_LIST_QUERY = graphql`
   query ProjectsList {
     allMarkdownRemark(sort: {
       order: DESC,
@@ -42,7 +42,6 @@ const PortfolioWrapper = styled.div`
   `}
   padding: 1rem;
 
-
   ${baskerville};
   font-size: 1rem;
   text-align: center;
@@ -65,14 +64,11 @@ const PortfolioWrapper = styled.div`
   }
 `
 
-
 const Cover = styled(Img)`
   border: 1px solid #e7e7e7;
-
   box-shadow: 0 2px 2px 0 rgba(79, 105, 198, .14), 
                 0 3px 1px -2px rgba(79, 105, 198, .2), 
                 0 1px 5px 0 rgba(79, 105, 198, .12) !important;
-  
   transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   &:hover { 
     transform: rotate(2deg) scale(1.01);
