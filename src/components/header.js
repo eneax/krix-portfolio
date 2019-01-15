@@ -35,11 +35,6 @@ const Navbar = styled.nav`
 			display: inline-block;
 			width: 2rem;
 			height: 2rem;
-      /* border-radius: 100%; */
-      
-
-
-			
 			margin-top: -0.2rem;
 			transition: transform .3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 			&:hover { 
@@ -59,6 +54,34 @@ const NavLinkWrapper = styled.div`
 		${above.mobileL`
 			font-size: 1rem;
 		`}
+
+		/* Hover Effect */
+		position: relative;
+		color: inherit;
+		text-decoration: none;
+		line-height: 24px;
+		&:before, &:after {
+			content: '';
+			position: absolute;
+			transition: transform .3s ease;
+		}
+		
+		display: inline-block;
+		padding-top: 10px;
+		padding-bottom: 5px;
+		overflow: hidden;
+		&:before {
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			height: 2px;
+			background: ${indigo};
+			transform:  translateX(-100%);
+		}
+		&:hover:before {
+			transform:  translateX(0);
+		}
+
   }
   a:nth-child(2) {
 		margin-left: 1rem;
@@ -66,117 +89,10 @@ const NavLinkWrapper = styled.div`
 `
 
 
-// const Navbar = styled.nav`
-//   ${avenir};
-//   display: table;
-//   width: 100%;
-//   box-sizing: border-box;
-//   padding: 2rem 1rem;
-//   ${above.mobileL`
-//     padding-left: 2rem;
-//     padding-right: 2rem;
-// 	`}
-
-//   a {
-//     display: table-cell;
-//     vertical-align: middle;
-//     color: ${grey};
-//     text-decoration: none;
-//     transition: color .15s ease-in;
-
-//     opacity: 1;
-//     transition: opacity .15s ease-in;
-
-//     &:link,
-//     &:visited {
-//       transition: color .15s ease-in;
-//     }
-//     &:hover {
-//       transition: color .15s ease-in;
-//       opacity: .5;
-//       transition: opacity .15s ease-in;
-//     }
-//     &:active {
-//       transition: color .15s ease-in;
-//       opacity: .8;
-//       transition: opacity .15s ease-out;
-//     }
-//     &:focus {
-//       transition: color .15s ease-in;
-//       outline: 1px dotted currentColor;
-//       opacity: .5;
-//       transition: opacity .15s ease-in;
-//     }
-
-// 		img {
-//       max-width: 8rem;
-//       max-height: 8rem;
-//       padding-left: 0;
-//       margin-left: -2rem;
-//       display: inline-block;
-//       border-radius: 100%;
-// 		}
-// 	}
-// `
-
-
-// const NavLinkWrapper = styled.div`
-//   display: table-cell;
-//   vertical-align: middle;
-//   width: 75%;
-//   text-align: right;
-
-  
-
-//   a {
-//     color: #4d4d4f;
-//     font-size: .875rem;
-//     margin-right: 1rem;
-//     margin-top: -2rem;
-//     ${above.mobileL`
-//       font-size: 1rem;
-//       margin-right: 2rem;
-// 		`}
-//     display: inline-block;
-
-//     text-decoration: none;
-//     transition: color .15s ease-in;
-
-//     opacity: 1;
-//     transition: opacity .15s ease-in;
-
-//     &:link,
-//     &:visited {
-//       transition: color .15s ease-in;
-//     }
-//     &:hover {
-//       transition: color .15s ease-in;
-//       opacity: .5;
-//       transition: opacity .15s ease-in;
-//     }
-//     &:active {
-//       transition: color .15s ease-in;
-//       opacity: .8;
-//       transition: opacity .15s ease-out;
-//     }
-//     &:focus {
-//       transition: color .15s ease-in;
-//       outline: 1px dotted currentColor;
-//       opacity: .5;
-//       transition: opacity .15s ease-in;
-//     }
-
-//   }
-//   a:nth-child(2) {
-//     margin-right: 1rem;
-//   }
-// `
-
-
 const Header = ({ siteTitle }) => (
   <Navbar>
 		<Link className="logo" to='/' title='Home'>
-			<img src={logo} alt='Enea Xharja Logo'/>
+			<img src={logo} alt='Classical Building Logo'/>
 		</Link>
 		<NavLinkWrapper>
 			<Link to='/portfolio' title='Portfolio'>Portfolio</Link>
