@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 
 import Layout from './layout';
 import Footer from './footer';
-import { ProjectLayout, DateTime } from '../elements'
+import { ProjectLayout, DateTime, InternalLink } from '../elements'
 
 
 export default class projectLayout extends Component {
@@ -19,6 +19,8 @@ export default class projectLayout extends Component {
           <div dangerouslySetInnerHTML={{
             __html: markdownRemark.html
           }} />
+
+          <InternalLink to="/portfolio">Back to portfolio</InternalLink>
         </ProjectLayout>
 
         <Footer />

@@ -1,5 +1,6 @@
 import styled from 'styled-components'
-import { facebook, instagram, mail, mineShaft } from '../utils'
+import { Link } from 'gatsby';
+import { facebook, instagram, mail, indigo, mineShaft } from '../utils'
 
 
 export const SocialLink = styled.a.attrs({
@@ -35,4 +36,42 @@ export const SocialLink = styled.a.attrs({
 	svg {
 		font-size: 2em;
 	}
+`
+
+export const underlineEffect = `
+	position: relative;
+	text-decoration: none;
+	line-height: 24px;
+	&:before, 
+	&:after {
+		content: '';
+		position: absolute;
+		transition: transform .3s ease;
+	}
+		
+	display: inline-block;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	overflow: hidden;
+	&:before {
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 2px;
+		background: ${indigo};
+		transform:  translateX(-100%);
+	}
+	&:hover:before {
+		transform:  translateX(0);
+	}
+`
+
+export const InternalLink = styled(Link)`
+	color: ${indigo};
+  text-decoration: none;
+	&:hover, &:focus {
+		color: ${indigo};
+	}
+	
+	${underlineEffect};
 `

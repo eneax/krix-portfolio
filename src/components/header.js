@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import logo from '../images/logo.svg'
 import { above, avenir, indigo } from '../utils'
+import { underlineEffect } from '../elements'
 
 
 const Navbar = styled.nav`
@@ -55,33 +56,7 @@ const NavLinkWrapper = styled.div`
 			font-size: 1rem;
 		`}
 
-		/* Hover Effect */
-		position: relative;
-		color: inherit;
-		text-decoration: none;
-		line-height: 24px;
-		&:before, &:after {
-			content: '';
-			position: absolute;
-			transition: transform .3s ease;
-		}
-		
-		display: inline-block;
-		padding-top: 10px;
-		padding-bottom: 5px;
-		overflow: hidden;
-		&:before {
-			left: 0;
-			bottom: 0;
-			width: 100%;
-			height: 2px;
-			background: ${indigo};
-			transform:  translateX(-100%);
-		}
-		&:hover:before {
-			transform:  translateX(0);
-		}
-
+		${underlineEffect}
   }
   a:nth-child(2) {
 		margin-left: 1rem;
