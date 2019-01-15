@@ -1,10 +1,10 @@
 import styled from 'styled-components'
-import { mineShaft } from '../utils'
+import { facebook, instagram, mail, mineShaft } from '../utils'
 
 
 export const SocialLink = styled.a.attrs({
   target: '_blank',
-  rel: 'nofollow'
+  rel:'noopener'
 })`
 	font-size: .875rem;
 	-moz-osx-font-smoothing: grayscale;
@@ -14,6 +14,15 @@ export const SocialLink = styled.a.attrs({
 	&:hover,
 	&:focus {
 		transform: scale(1.05);
+		svg[data-icon="facebook-f"] {
+			color: ${facebook};
+		}
+		svg[data-icon="instagram"] {
+			color: ${instagram};
+		}
+		svg[data-icon="envelope"] {
+			color: ${mail};
+		}
 	}
 	&:active {
 		transform: scale(.9);
